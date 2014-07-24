@@ -130,13 +130,22 @@ a.service-plan-detail-link:hover {
 }
 
 .credit-accept {color:#555;font-size: 14px;}
-.credit-accept-img {
-	max-height:20px;
-}
+.credit-accept-img {max-height:20px;}
+
+.price-block {padding:20px;}
+.price-block h4 {margin-bottom:15px;}
+.price-block p {font-size: 12px;}
+
+.drive-price {}
+
+.desc {color:#999;}
+.div-right {border-right:1px solid #eee;}
 
 h5 {
 	color:#555;
 }
+.reveal-modal {border-radius: 8px;}
+dialog .close-reveal-modal, .reveal-modal .close-reveal-modal {font-size: 1.5rem;color:#ccc;}
 
 select#service-plan-select, select#expiration-date-select, select#drive-needed {
 	border-radius: 3px;
@@ -155,6 +164,11 @@ input[type=number]::-webkit-outer-spin-button {
 input[type=number]::-webkit-inner-spin-button {
 	background-color: #ff9000;
 }
+
+strong {color:#555;}
+
+a {color:#ff9000;}
+a:hover {color:#ff8000;}
 
 button, .button {
 	background: #ff9000;
