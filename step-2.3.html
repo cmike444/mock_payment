@@ -21,21 +21,37 @@
           <div class="small-12 small-centered medium-6 medium centered large-4 large-centered columns">
             <form>
               <div class="row">
-                <p class="choose-service-plan">Complete shipping information:</p>
+                <p class="choose-service-plan">Please complete the form below:</p>
                 <div class="large-12 columns">
-                    <input type="text" class="" placeholder="Address">
-                    <input type="text" class="" placeholder="City">
-                    <input type="text" class="" placeholder="ZIP">
-                  
+                  <input type="text" class="" placeholder="Address">
+                  <input type="text" class="" placeholder="City">
+                </div>
+                <div class="large-6 columns">
+                  <input type="text" class="" placeholder="State">
+                </div>
+                <div class="large-6 columns">
+                  <input type="text" class="" placeholder="ZIP">
+                </div>
+                <div class="large-12 columns">
                   <div class="basic" style="margin: 0px 15px;">
                     <input id="checkbox1" type="checkbox" checked><label for="checkbox1">Same address as billing.</label>
                   </div>
-                  <div class="billing-address" style="display:none;">
+                </div>
+
+
+                <div class="billing-address" style="display:none;">
+                  <div class="large-12 columns">
                     <input type="text" class="" placeholder="Billing Address">
                     <input type="text" class="" placeholder="City">
+                  </div>
+                  <div class="large-6 columns">
+                    <input type="text" class="" placeholder="State">
+                  </div>
+                  <div class="large-6 columns">
                     <input type="text" class="" placeholder="ZIP">
                   </div>
                 </div>
+                
               </div>
 
               <div class="row">
@@ -59,11 +75,11 @@
       $( "#checkbox1" ).change(function () {
         
         if($('#checkbox1').is(':checked')) {
-          $('.billing-address').hide();
+          $('.billing-address').slideToggle();
         }
         else {
           console.log("fuck");
-          $('.billing-address').show();
+          $('.billing-address').slideToggle();
         }
       })
     </script>

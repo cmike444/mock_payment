@@ -111,7 +111,7 @@ a.service-plan-detail-link:hover {
   transition: all 1s ease-in-out; 
 }
 .drive-confirm:hover i:hover {
-	color:#999;
+	color:#666;
 }
 
 .drive-confirm strong {
@@ -140,6 +140,7 @@ a.service-plan-detail-link:hover {
 
 .desc {color:#999;}
 .div-right {border-right:1px solid #eee;}
+img.drive-img {padding:15px;}
 
 h5 {
 	color:#555;
