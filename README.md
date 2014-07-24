@@ -1,4 +1,4 @@
 Mock Payment Form 
 ============
-This is a html, css & js mockup for 640 Labs and their sign up process for the web dashboard.
+This is a mockup for [640 Labs](http://640labs.com "640 Labs")' sign up process with [Stripe](https://stripe.com/ "Stripe") in their web application.
 ![Alt text](https://github.com/cmike444/mock_payment/blob/master/images/payment-process.jpg "Payment Process" )
