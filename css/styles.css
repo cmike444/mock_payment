@@ -1,0 +1,164 @@
+.choose-service-plan {
+	color:#999;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.service-plan {
+	border: 1px solid #ddd;
+	padding: 25px;
+	border-radius: 3px;
+	margin: 20px;
+	text-align: center;
+	color:#ddd;
+}
+
+.service-plan.active {
+	border:2px solid #ff9000;
+	color:#ff9000;
+}
+.service-plan.active:hover {
+	border:2px solid #ff9000;
+	color:#ff9000;
+}
+
+.service-plan:hover {
+	color:#999;
+	border-color:#999;
+}
+
+a.service-plan-detail-link {
+	font-size:12px;
+	text-align: center;
+	color:#ccc;
+}
+a.service-plan-detail-link:hover {
+	text-decoration: underline;
+}
+
+.detail {
+	border: 1px solid #ddd;
+	padding: 25px;
+	border-radius: 3px;
+	margin: 0px 15px 15px;
+}
+.detail i {
+	margin:0px 10px;
+}
+.detail p {
+	color:#999;
+}
+
+.detail-price {
+	text-align: center;
+	font-size: 14px;
+}
+.detail-price span {
+	font-size: 12px;
+	color:#ccc;
+}
+
+.detail .fa.fa-check {
+	color:#ff9000;
+}
+.request-drives {
+	padding-top:5px;
+	color:#555;
+}
+
+.back-arrow {
+	color:#ccc;
+}
+.back-arrow:hover {
+	color:#555;
+}
+
+.detail.detail-confirm {
+	border-color: #ff8000;
+	border:2px solid #ff8000;
+}
+.detail.detail-confirm p {
+	margin-bottom:0px;
+}
+
+.drive-confirm {
+	padding:5px;
+	margin: 15px;
+	border-radius: 3px;
+	border:2px solid #ff8000;
+	color:#999;
+	position: relative;
+
+}
+
+.drive-confirm i {
+	position: absolute;
+	right:10px;
+	top:12px;
+	color:#ccc;
+	display: none;
+	-webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+.drive-confirm:hover i {
+	color:#ccc;
+	display: inherit;
+	-webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out; 
+}
+.drive-confirm:hover i:hover {
+	color:#999;
+}
+
+.drive-confirm strong {
+	color:#ff9000;
+	text-align: right;
+}
+
+.drive-confirm p {
+	margin-bottom:0px;
+	padding-left:15px;
+}
+
+.img-responsive {
+	width:100%;
+	height:auto;
+}
+
+.credit-accept {color:#555;font-size: 14px;}
+.credit-accept-img {
+	max-height:20px;
+}
+
+h5 {
+	color:#555;
+}
+
+select#service-plan-select, select#expiration-date-select, select#drive-needed {
+	border-radius: 3px;
+}
+
+
+input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], input[type="select"], textarea {
+	border:1px solid #ddd;
+	border-radius: 3px;
+	color:#555;
+}
+
+input[type=number]::-webkit-outer-spin-button {
+    background-color: #ff9000;
+}
+input[type=number]::-webkit-inner-spin-button {
+	background-color: #ff9000;
+}
+
+button, .button {
+	background: #ff9000;
+}
+button:hover, .button:hover {
+	background: #ff8000;
+}
