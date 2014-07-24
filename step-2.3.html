@@ -21,21 +21,27 @@
           <div class="small-12 small-centered medium-6 medium centered large-4 large-centered columns">
             <form>
               <div class="row">
-                <p class="choose-service-plan">Please complete the form below:</p>
+                <p class="choose-service-plan">Complete shipping information:</p>
                 <div class="large-12 columns">
-                    <input type="text" class="" placeholder="First Name">
-                    <input type="text" class="" placeholder="Last Name">
-                    <input type="email" class="" placeholder="Email Address">
-                    <input type="tel" class="" placeholder="Phone Number">
-                    <input type="text" class="" placeholder="Password">
-                    <input type="text" class="" placeholder="Password Confirmation">
+                    <input type="text" class="" placeholder="Shipping Address">
+                    <input type="text" class="" placeholder="City">
+                    <input type="text" class="" placeholder="ZIP">
+                  
+                  <div class="basic" style="margin: 0px 15px;">
+                    <input id="checkbox1" type="checkbox" checked><label for="checkbox1">Same address as billing.</label>
+                  </div>
+                  <div class="billing-address" style="display:none;">
+                    <input type="text" class="" placeholder="Billing Address">
+                    <input type="text" class="" placeholder="City">
+                    <input type="text" class="" placeholder="ZIP">
+                  </div>
                 </div>
               </div>
 
               <div class="row">
                 <div class="large-12 columns">
-                  <a href="step-2.3.html" class="button radius expand">Continue</a>
-                  <a href="step-2.2.html" class="back-arrow"><i class="fa fa-arrow-left"></i> Back</a>
+                  <a href="step-3.html" class="button radius expand">Continue</a>
+                  <a href="step-2.html" class="back-arrow"><i class="fa fa-arrow-left"></i> Back</a>
                 </div>
               </div>
             </form>
@@ -49,6 +55,17 @@
     <script src="js/foundation.min.js"></script>
     <script>
       $(document).foundation();
+
+      $( "#checkbox1" ).change(function () {
+        
+        if($('#checkbox1').is(':checked')) {
+          $('.billing-address').hide();
+        }
+        else {
+          console.log("fuck");
+          $('.billing-address').show();
+        }
+      })
     </script>
   </body>
 </html>
